@@ -1,5 +1,5 @@
 public class Ex1ab {
-		private boolean isPalindrome(String input) {
+	private boolean isPalindrome(String input) {
 		for (int i = 0; i < input.length()/2 + 1; i++) {
 			if (input.charAt(i) != input.charAt(input.length()-1-i)) {
 				return false;
@@ -69,7 +69,7 @@ public class Ex2{
 		return true;
 	}
 
-	Tuple<Integer,Integer> longestSubPalindrome(String input) {
+	public Tuple<Integer,Integer> longestSubPalindrome(String input) {
 		int maxLen = 1;
 		int startIndex = 0;
 		for (int i = 0; i < input.length()-1; i++) {
@@ -143,7 +143,7 @@ public class Ex4 {
 }
 
 public class Ex5 {
-		private boolean isInDict(String word, List<String> dict, int lower, int upper) {
+	private boolean isInDict(String word, List<String> dict, int lower, int upper) {
 		if (lower >= upper && dict.get(lower).compareTo(word) != 0) {
 			return false;
 		}
